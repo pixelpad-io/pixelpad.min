@@ -1,0 +1,72 @@
+#pp3d-ide {
+    background: #f8f8ff;
+}
+
+#pp-col-adjust-code, 
+#pp-col-adjust-canvas,
+#pp-col-adjust-none{
+    background: #E7E9EB;
+    border-left: 1px solid #d5dbe1;
+    border-right: 1px solid #d5dbe1;
+}
+
+.ide-ui{
+    background: #E7E9EB;
+    color: #343a40;
+}
+
+#vLayoutStartTab, #vLayoutLoopTab{
+    color:#343a40;
+    background: #E7E9EB;
+    border-top: 1px solid #d5dbe1;
+    border-bottom: 1px solid #d5dbe1;
+}
+
+#vLayoutLoopTab:hover{
+    background: #eaecee;
+    border-top: 1px solid #eaecee;
+    border-bottom: 1px solid #eaecee;
+}
+
+.pp-script-active, .pp-asset-list .pp-script-active:hover {
+    background: #17a2b8;
+    color:white;
+}
+
+#pp-block1code, 
+#pp-block1loop {
+    border: 2px solid #f3f5f7;
+}
+
+#pp-block1code.active, 
+#pp-block1loop.active {
+    border: 2px solid #E7E9EB;
+}
+  
+#vLayoutStartTab.active, 
+#vLayoutLoopTab.active{
+    background: #f3f5f7;
+}
+
+.minimap-decorations-layer{
+    background: rgb(231 233 235 / 25%);
+}
+
+.startloop{
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: #E7E9EB;
+    color: black;
+}
+  
+.startloop.active{
+    background: #f3f5f7;
+}
+  
+.startloop:hover{
+    cursor:pointer;
+}
+
+#convergence-tab{
+    background: #343a40;
+    color:  #E7E9EB;
+}

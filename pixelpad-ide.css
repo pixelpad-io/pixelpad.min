@@ -1,0 +1,250 @@
+.pp-editor-active {
+    display: block;
+}
+
+.pp-editor-inactive {
+    display: none;
+}
+
+.pp-script-inactive {
+    background: none;
+}
+
+#pp-add-script,
+#pp-add-room,
+#pp-add-texture,
+#pp-add-sound,
+#pp-add-function,
+#pp-add-model {
+    float: right;
+    line-height: 1.5;
+}
+
+#pp-add-script:hover,
+#pp-add-room:hover,
+#pp-add-texture:hover,
+#pp-add-sound:hover,
+#pp-add-function:hover,
+#pp-add-model:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sortPlaceholder {
+    height: 1.5rem;
+    background: #7e7e7e;
+}
+
+.assetHeader:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+ul {
+    padding-left: 0;
+}
+
+.pp-asset-list li {
+    padding: 0 0.5rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+}
+
+.pp-asset-list li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+
+.folder-span {
+    width: calc(100% + 1.5rem);
+    /* 1.5rem is the negative margin of folders */
+}
+
+.folder-span:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.folder-span .pp-asset-delete {
+    margin-right: 0.5rem;
+    /* padding correction from folder-span */
+}
+
+.pp-asset-delete {
+    display: none;
+    float: right;
+    line-height: 1.5;
+}
+
+.pp-asset-list .folder-span:hover~.pp-asset-delete,
+.pp-asset-list .folder-span:hover+.pp-asset-delete,
+.pp-asset-list .folder-span:hover>.pp-asset-delete,
+.pp-asset-list li:hover~.pp-asset-delete,
+.pp-asset-list li:hover+.pp-asset-delete,
+.pp-asset-list li:hover>.pp-asset-delete {
+    display: inline-block;
+}
+
+.pp-asset-delete:hover {
+    font-size: 1.1rem;
+}
+
+#pp-col-adjust-code,
+#pp-col-adjust-canvas,
+#pp-col-adjust-none {
+    width: 0.75rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 50;
+    position: relative;
+}
+
+#pp-col-adjust-code:hover,
+#pp-col-adjust-canvas:hover {
+    cursor: col-resize;
+    filter: brightness(150%);
+}
+
+.text-vert {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+    white-space: nowrap;
+    top: 30%;
+    position: relative;
+}
+
+#translateBlocks:hover {
+    background-color: #1d39b6;
+}
+
+#translateBlocks {
+    background-color: #1e5ab7;
+}
+
+#pp-block0 {
+    overflow: hidden;
+}
+
+#pp-block0:hover {
+    overflow: auto;
+}
+
+#pp-console:hover {
+    overflow: auto;
+}
+
+.assetCard,
+.uploadCard {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.assetCard:hover,
+.uploadCard:hover {
+    cursor: pointer;
+}
+
+.assetCard.cardActive {
+    box-shadow: 0 2px 6px 0 rgb(0, 71, 144)
+}
+
+.assetCard img,
+.assetCardTitle,
+.uploadCard img,
+.startloop {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.assetTab {
+    border: 1px solid #dee2e6;
+    list-style: none;
+    color: #007bff;
+}
+
+.assetTab.active {
+    background: #007bff;
+    color: white;
+}
+
+.assetTab:hover {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.assetCard .assetImg {
+    background: url("https://s3.us-west-1.amazonaws.com/test.pixelpad.io/__ASSET__.1.342520.1646771166.transparent3.png");
+}
+
+.monaco-editor.rename-box {
+    display: none;
+}
+
+.debugButton {
+    width: 25px;
+    height: 25px;
+    background-color: #6d399f;
+    color: #FFFFFF;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#debugOverlay {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 40px;
+    left: 10px;
+    background-color: rgba(0, 0, 255, 0.3);
+    color: #FFFFFF;
+    border-radius: 25px;
+    border-width: 0.5em;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    font-family: "Courier New", monospace;
+}
+
+.debugField {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#pp3d-ide:not(:has(#suggestions:checked)) .suggest-widget {
+    display: none !important;
+}
+
+#claude-chat-messages pre {
+    background: #343a40;
+    color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom:0px;
+}
+

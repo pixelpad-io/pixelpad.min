@@ -1,0 +1,72 @@
+#pp3d-ide {
+    background: #000;
+}
+
+#pp-col-adjust-code, 
+#pp-col-adjust-canvas,
+#pp-col-adjust-none {
+    background: #2f1c40;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.ide-ui{
+    background: #2f1c40;
+    color: #fff;
+}
+
+#vLayoutStartTab, #vLayoutLoopTab {
+    color:#fff;
+    background: #3d2257;
+    border-top: 1px solid #3d2257;
+    border-bottom: 1px solid #3d2257;
+}
+
+#vLayoutLoopTab:hover{
+    background: #59317e;
+    border-top: 1px solid #59317e;
+    border-bottom: 1px solid #59317e;
+}
+
+.pp-script-active, .pp-asset-list .pp-script-active:hover {
+    background: #E85DB6;
+
+}
+
+#pp-block1code, 
+#pp-block1loop {
+    border: 2px solid #3d2257;
+}
+
+#pp-block1code.active, 
+#pp-block1loop.active {
+    border: 2px solid #6d399f;
+}
+
+#vLayoutStartTab.active, 
+#vLayoutLoopTab.active{
+    background: #6d399f;
+}
+
+.minimap-decorations-layer{
+    background: unset;
+}
+
+.startloop{
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: #3d2257;
+    color: rgb(255, 255, 255);
+  }
+  
+  .startloop.active{
+    background: #6d399f;
+  }
+  
+  .startloop:hover{
+    cursor:pointer;
+  }
+  
+#convergence-tab{
+    background: #f3ecf3;
+    color: #2f1c40;
+}
